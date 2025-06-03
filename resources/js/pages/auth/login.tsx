@@ -39,7 +39,7 @@ export default function Login({ status, canResetPassword }: LoginProps) {
             onSuccess: () => {
                 toast.success('Login berhasil!');
                 setTimeout(() => {
-                    router.get(route('users.index'), { preserveState: true });
+                    router.get(route('users.index'));
                 }, 3000);
             },
             onError: () => {
