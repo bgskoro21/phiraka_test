@@ -16,12 +16,14 @@ Ini adalah website yang menampilkan informasi mengenai data user
 
 ## 🔧 Instalasi
 
-1. Setup your Environment Variables for Database Connection
+1. Setup your Environment Variables for Database Connection and SITE KEY and SECRET KEY
 2. Run command below:
 
 ```bash
 composer install
 npm install
+cp .env.example .env
+php artisan key:generate
 php artisan migrate:fresh --seed
 php artisan serve
 ```
